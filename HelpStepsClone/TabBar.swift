@@ -28,7 +28,6 @@ struct TabBar: View {
                     Image(systemName: "3.circle")
                     Text("")
                 .tag(2)
-                .offset(y: -20)
                 }
             Text("Topluluk")
                 .tabItem {
