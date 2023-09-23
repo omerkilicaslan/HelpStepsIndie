@@ -7,21 +7,23 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct ActivitiesView: View {
     
     var body: some View {
         
-        VStack(spacing: 20){
-            TopMainRectangleViewComp()
-            
-            CardMainView()
-            
-            Spacer()
+        ScrollView{
+            VStack(spacing: 20){
+                TopMainRectangleViewComp()
+                
+                ActivitiesCardView()
+                
+                Spacer()
+            }
         }
     }
 }
 
-struct CardMainView: View {
+struct ActivitiesCardView: View {
     
     var body: some View {
         ZStack{
@@ -132,8 +134,8 @@ struct CircularCountdownView: View {
     }
 }
 
-struct MainView_Previews: PreviewProvider {
+struct ActivitiesView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        ActivitiesView()
     }
 }

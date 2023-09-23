@@ -10,4 +10,8 @@ import Foundation
 struct Constants {
     
     static let inviteFriends = "Arkadaşlarını Davet Et"
+    static let yourSteps = "Adımlarınız"
+    static let currentHS = "Mevcut HS"
+    static let transfer = "Transfer"
+
 }

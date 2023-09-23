@@ -18,16 +18,17 @@ struct ProfileCardView: View {
             VStack(alignment: .leading){
                 Text("Ömer Faruk Kılıçaslan")
                     .foregroundColor(.black)
-                    .font(.system(size: 16))
+                    .font(.system(size: 18))
+
                 
                 Text("kilicaslanomerkuf@gmail.com")
                     .foregroundColor(.black)
-                    .font(.system(size: 12))
+                    .font(.system(size: 14))
 
                 
                 Text("+905532356563")
                     .foregroundColor(.black)
-                    .font(.system(size: 12))
+                    .font(.system(size: 14))
             }
             .padding(.top,8)
             .bold()
@@ -53,35 +54,34 @@ struct WalletCardView: View {
                 Text("Tümünü Gör")
                     .foregroundColor(.green)
                     .bold()
-                    .font(.caption)
+                    .font(.system(size: 14))
                     .padding(.trailing, 10)
             }
             .frame(width: UIScreen.main.bounds.width * 0.9)
             
             HStack(spacing: 4) {
-                SingleWalletCard(image: Image(systemName: "shoeprints.fill"), title: "Adımlarınız", value: "1.55")
+                SingleWalletCard(image: Image(systemName: "shoeprints.fill"), title: Constants.yourSteps, value: "1.55")
                 
                 Rectangle()
                     .frame(width: 1, height: 50)
                     .foregroundColor(.gray)
                     .offset(y: -20)
                 
-                SingleWalletCard(image: Image(systemName: "shoeprints.fill"), title: "Adımlarınız", value: "1.55")
+                SingleWalletCard(image: Image(systemName: "figure.handball"), title: Constants.currentHS, value: "1.55")
                 
                 Rectangle()
                     .frame(width: 1, height: 50)
                     .foregroundColor(.gray)
                     .offset(y: -20)
                 
-                SingleWalletCard(image: Image(systemName: "shoeprints.fill"), title: "Adımlarınız", value: "1.55")
+                SingleWalletCard(image: Image(systemName: "rosette"), title: Constants.transfer, value: "1.55")
             }
-            .border(.gray)
-            .cornerRadius(4)
-            .shadow(radius: 4)
+            .background(Color.white) // Beyaz arka plan ekledik
+            .cornerRadius(6)
             .frame(width: UIScreen.main.bounds.width * 0.9)
+            .shadow(radius: 1) // Shadow ekledik
             
         }
-        
     }
 }
 
@@ -92,8 +92,7 @@ struct SingleWalletCard: View {
     var body: some View {
         VStack(spacing: 6){
             image
-                .resizable()
-                .frame(width: 25, height: 25)
+                .font(.title)
                 .padding(.top,8)
             
             Text(title)
