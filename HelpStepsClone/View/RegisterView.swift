@@ -19,19 +19,19 @@ struct RegisterView: View {
         NavigationView {
             ScrollView{
                 VStack{
-                    CustomTextField(text: $email, placeHolder: "E-posta adresiniz", header: "E-Posta")
+                    CustomTextFieldComp(text: $email, placeHolder: "E-posta adresiniz", header: "E-Posta")
                         .padding(.bottom, 30)
                     
-                    CustomTextField(text: $name, placeHolder: "E-posta adresiniz", header: "Ad")
+                    CustomTextFieldComp(text: $name, placeHolder: "E-posta adresiniz", header: "Ad")
                         .padding(.bottom, 30)
 
-                    CustomTextField(text: $surname, placeHolder: "E-posta adresiniz", header: "Soyadınız")
+                    CustomTextFieldComp(text: $surname, placeHolder: "E-posta adresiniz", header: "Soyadınız")
                         .padding(.bottom, 30)
                     
-                    CustomTextField(text: $surname, placeHolder: "E-posta adresiniz", header: "Soyadınız")
+                    CustomTextFieldComp(text: $surname, placeHolder: "E-posta adresiniz", header: "Soyadınız")
                         .padding(.bottom, 30)
                     
-                    CustomTextField(text: $surname, placeHolder: "E-posta adresiniz", header: "Davet Kodu")
+                    CustomTextFieldComp(text: $surname, placeHolder: "E-posta adresiniz", header: "Davet Kodu")
                         .padding(.bottom, 30)
                     
                     VStack(alignment: .leading, spacing: 5){
