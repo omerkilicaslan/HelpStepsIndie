@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		669583522ABF0F7400A73209 /* CustomTextFieldComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669583512ABF0F7400A73209 /* CustomTextFieldComp.swift */; };
 		669583542ABF0F9900A73209 /* BlueAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669583532ABF0F9900A73209 /* BlueAlert.swift */; };
 		669583572ABF105C00A73209 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669583562ABF105C00A73209 /* Constants.swift */; };
+		A871A78D2AB37EA300A16CF0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A871A78C2AB37EA300A16CF0 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		669583512ABF0F7400A73209 /* CustomTextFieldComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldComp.swift; sourceTree = "<group>"; };
 		669583532ABF0F9900A73209 /* BlueAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueAlert.swift; sourceTree = "<group>"; };
 		669583562ABF105C00A73209 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A871A78C2AB37EA300A16CF0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				6666D29F2AB3792D004DB914 /* HelpStepsCloneApp.swift */,
 				6666D2A32AB37932004DB914 /* Assets.xcassets */,
 				6666D2A52AB37932004DB914 /* Preview Content */,
+				A871A78C2AB37EA300A16CF0 /* TabBar.swift */,
 			);
 			path = HelpStepsClone;
 			sourceTree = "<group>";
@@ -181,7 +184,7 @@
 				};
 			};
 			buildConfigurationList = 6666D2972AB3792D004DB914 /* Build configuration list for PBXProject "HelpStepsClone" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -223,6 +226,8 @@
 				6666D2B42AB4F3B3004DB914 /* ProfileView.swift in Sources */,
 				669583502ABF0F4B00A73209 /* TopMainRectangleViewComp.swift in Sources */,
 				6666D2B02AB37A7B004DB914 /* Button.swift in Sources */,
+				A871A78D2AB37EA300A16CF0 /* TabBar.swift in Sources */,
+				6666D2A22AB3792D004DB914 /* ContentView.swift in Sources */,
 				6666D2A02AB3792D004DB914 /* HelpStepsCloneApp.swift in Sources */,
 				6666D2B62AB4F437004DB914 /* WalletCardView.swift in Sources */,
 				669583522ABF0F7400A73209 /* CustomTextFieldComp.swift in Sources */,
@@ -355,7 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelpStepsClone/Preview Content\"";
-				DEVELOPMENT_TEAM = 7CRNJ953YN;
+				DEVELOPMENT_TEAM = 5X398NQQ2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -384,7 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelpStepsClone/Preview Content\"";
-				DEVELOPMENT_TEAM = 7CRNJ953YN;
+				DEVELOPMENT_TEAM = 5X398NQQ2A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
