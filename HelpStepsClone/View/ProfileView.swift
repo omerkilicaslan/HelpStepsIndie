@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject var env : RootEnvironment
+    
     var body: some View {
         ZStack{
-            LinearGradient(
-                        gradient: Gradient(colors: [Color.green, Color.white]),
-                        startPoint: .top,   // 30% green at the top
-                        endPoint: .bottom  // 70% white at the bottom
-                    )
-                    .edgesIgnoringSafeArea(.all)
+            GreenBackgroundView()
             
             VStack{
                 VStack(alignment: .leading){
@@ -63,10 +60,33 @@ struct ProfileView: View {
                                     title: "Rozetler",
                                     leadingImageName: "rosette"
                                 )
+
+                                Button(action: {
+                                    print("Button Tapped")
+                                   
+                                    RootEnvironment.showPartialSheet(view: AnyView(
+                                        TransactionAlertWarningWithButtonVertical(
+                                            topMessage: "Top Message",
+                                            bottomMessage: "Bottom Message",
+                                            topButtonString: "Top Button String",
+                                            topButtonAction: {
+                                                print("Top button action tapped")
+                                            }
+                                        )
+                                        .environmentObject(env)
+                                    ),
+                                    isModal: true
+                                    )
+                                    
+                                }, label: {
+                                    ListRowView(
+                                        title: "Rozetler",
+                                        leadingImageName: "rosette"
+                                    )
+                                })
                             }
                         }
                         .scrollContentBackground(.hidden)
-                        
                     }
                     .frame(width: UIScreen.main.bounds.width * 0.95)
                     

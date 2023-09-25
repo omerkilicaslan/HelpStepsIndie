@@ -31,7 +31,7 @@ struct ActivitiesCardView: View {
                 .frame(width: UIScreen.main.bounds.width * 0.95, height: UIScreen.main.bounds.height * 0.65)
                 .foregroundColor(.white)
                 .cornerRadius(12)
-                .shadow(radius: 10)
+                .shadow(radius: 1)
             
             VStack{
                 //Üstteki yeşil butonlar

@@ -159,3 +159,16 @@ struct BlueFullWithButton : ButtonStyle {
         
     }
 }
+
+struct WhiteFullWithButton : ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding(.top, 12)
+            .padding(.bottom, 12)
+            .frame(minWidth:0.0,maxWidth: .infinity)
+            .foregroundColor(.oceanBlue)
+            .background(Color.white)
+            .cornerRadius(4.0)
+        
+    }
+}

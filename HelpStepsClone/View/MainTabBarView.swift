@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainTabBarView: View {
+    @EnvironmentObject var env: RootEnvironment
     var body: some View {
         TabView {
             Text("Ana Sayfa")
@@ -38,6 +39,7 @@ struct MainTabBarView: View {
                 .tag(3)
             
             ProfileView()
+                .environmentObject(self.env)
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profil")
