@@ -63,7 +63,7 @@ struct ProfileView: View {
 
                                 Button(action: {
                                     print("Button Tapped")
-                                   
+                                   /*
                                     RootEnvironment.showPartialSheet(view: AnyView(
                                         TransactionAlertWarningWithButtonVertical(
                                             topMessage: "Top Message",
@@ -77,7 +77,7 @@ struct ProfileView: View {
                                     ),
                                     isModal: true
                                     )
-                                    
+                                    */
                                 }, label: {
                                     ListRowView(
                                         title: "Rozetler",

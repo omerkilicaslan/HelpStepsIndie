@@ -102,7 +102,9 @@ struct ActivitiesCardView: View {
                     buttonText: "Premiuma Git",
                     buttonImage: "arrow.right",
                     width: UIScreen.main.bounds.width * 0.7,
-                    height: 45)
+                    height: 45,
+                    fontSize: 20
+                )
             }
         }
         .frame(width: UIScreen.main.bounds.width * 0.95)

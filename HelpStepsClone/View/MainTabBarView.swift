@@ -31,10 +31,11 @@ struct MainTabBarView: View {
                     Text("")
                 }
                 .tag(2)
-            Text("Topluluk")
+            CartView()
+                .environmentObject(self.env)
                 .tabItem {
-                    Image(systemName: "person.3")
-                    Text("Topluluk")
+                    Image(systemName: "basket.fill")
+                    Text("Sepet")
                 }
                 .tag(3)
             
@@ -49,8 +50,3 @@ struct MainTabBarView: View {
     }
 }
 
-struct MainTabBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabBarView()
-    }
-}

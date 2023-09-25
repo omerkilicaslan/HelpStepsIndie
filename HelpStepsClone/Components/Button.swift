@@ -26,9 +26,10 @@ struct CurvedButton: View {
 struct CustomCurvedButtonWidthHeightFree: View{
     
     var buttonText: String
-    var buttonImage: String
+    var buttonImage: String?
     var width: CGFloat
     var height: CGFloat
+    var fontSize: CGFloat
     
     var body: some View {
         Button {
@@ -37,17 +38,20 @@ struct CustomCurvedButtonWidthHeightFree: View{
         {
             HStack{
                 Text(buttonText)
-                    .font(.caption)
+                    .font(.system(size: fontSize))
+                    .bold()
                     .foregroundColor(Color.white)
                     .kerning(-0.31)
                     .lineLimit(nil)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal,8)
                 
-                Image(systemName: buttonImage)
-                    .resizable()
-                    .frame(width: 20, height: 20)
-                    .padding(.leading)
+                if buttonImage != nil {
+                    Image(systemName: buttonImage ?? "")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .padding(.leading)
+                }
             }
         }
         .multilineTextAlignment(.center)
@@ -166,7 +170,6 @@ struct WhiteFullWithButton : ButtonStyle {
             .padding(.top, 12)
             .padding(.bottom, 12)
             .frame(minWidth:0.0,maxWidth: .infinity)
-            .foregroundColor(.oceanBlue)
             .background(Color.white)
             .cornerRadius(4.0)
         
