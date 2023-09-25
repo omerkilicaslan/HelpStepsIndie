@@ -8,36 +8,55 @@
 import SwiftUI
 
 struct HView: View {
+    @EnvironmentObject var env : RootEnvironment
+
     let screenWidth = UIScreen.main.bounds.width
-    let rectangleHeight: CGFloat = 300
+    let rectangleHeight: CGFloat = 200
     
     var body: some View {
-        VStack(alignment: .leading){
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 20) {
-                    Rectangle()
-                        .fill(Color.blue)
-                        .frame(width: screenWidth, height: rectangleHeight)
-                    
-                    Rectangle()
-                        .fill(Color.green)
-                        .frame(width: screenWidth, height: rectangleHeight)
-                }
-            }
-            .frame(height: rectangleHeight)
-            
+        VStack{
             VStack(alignment: .leading){
-                Text("Selam, Ömer Faruk  👋")
-                    .bold()
-                    .font(.system(size: 20))
-                    .padding(.vertical,8)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 20) {
+                        Rectangle()
+                            .fill(Color.blue)
+                            .frame(width: screenWidth, height: rectangleHeight)
+                        
+                        Rectangle()
+                            .fill(Color.green)
+                            .frame(width: screenWidth, height: rectangleHeight)
+                    }
+                }
+                .frame(height: rectangleHeight)
                 
-                Text("Ne aramıştın?")
-                    .bold()
-                    .font(.system(size: 28))
+                VStack(alignment: .leading){
+                    Text("Selam, Ömer Faruk  👋")
+                        .bold()
+                        .font(.system(size: 20))
+                        .padding(.vertical,8)
+                    
+                    Text("Ne aramıştın?")
+                        .bold()
+                        .font(.system(size: 30))
+
+                }
+                .padding(.horizontal, 20)
+                .padding(.bottom, 20)
+                
+                
             }
-            .padding(.horizontal, 20)
+            
+            HStack(spacing: 20){
+                HelpStepsVerticalButton(buttonText: "HELP STEPS", buttonImage: "🏃")
+                
+                HelpStepsVerticalButton(buttonText: "HS MARKET", buttonImage: "🎁")
+            }
+            
+            Spacer()
         }
+        
+        
+        
     }
 }
 
