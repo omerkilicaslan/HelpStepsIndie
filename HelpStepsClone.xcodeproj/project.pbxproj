@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6615E9DD2AC1A289005111E8 /* HView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615E9DC2AC1A289005111E8 /* HView.swift */; };
 		6666D2A02AB3792D004DB914 /* HelpStepsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6666D29F2AB3792D004DB914 /* HelpStepsCloneApp.swift */; };
 		6666D2A42AB37932004DB914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6666D2A32AB37932004DB914 /* Assets.xcassets */; };
 		6666D2A72AB37932004DB914 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6666D2A62AB37932004DB914 /* Preview Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6615E9DC2AC1A289005111E8 /* HView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HView.swift; sourceTree = "<group>"; };
 		6666D29C2AB3792D004DB914 /* HelpStepsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpStepsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6666D29F2AB3792D004DB914 /* HelpStepsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpStepsCloneApp.swift; sourceTree = "<group>"; };
 		6666D2A32AB37932004DB914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				6695834B2ABEFB4E00A73209 /* ActivitiesView.swift */,
 				66976AAA2AC094BE000D00A1 /* MainView.swift */,
 				6679F8262AC185AB00C0F81E /* CartView.swift */,
+				6615E9DC2AC1A289005111E8 /* HView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				669583592ABFAF9D00A73209 /* RootEnvironment.swift in Sources */,
 				6666D2AE2AB379D0004DB914 /* LoginView.swift in Sources */,
 				66976AB12AC0994C000D00A1 /* CategoryCard.swift in Sources */,
+				6615E9DD2AC1A289005111E8 /* HView.swift in Sources */,
 				6695834C2ABEFB4E00A73209 /* ActivitiesView.swift in Sources */,
 				669583542ABF0F9900A73209 /* BlueAlert.swift in Sources */,
 				6666D2B22AB382FE004DB914 /* RegisterView.swift in Sources */,

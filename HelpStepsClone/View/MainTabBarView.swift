@@ -11,7 +11,8 @@ struct MainTabBarView: View {
     @EnvironmentObject var env: RootEnvironment
     var body: some View {
         TabView {
-            Text("Ana Sayfa")
+            MainView()
+                .environmentObject(self.env)
                     .tabItem {
                         Image(systemName: "house")
                         Text("Ana Sayfa")
@@ -25,10 +26,11 @@ struct MainTabBarView: View {
                 }
                 .tag(1)
             
-            Text("NE SANDIN KANKS")
+            HView()
+                .environmentObject(self.env)
                 .tabItem {
                     Image(systemName: "shadow")
-                    Text("")
+                    Text("H")
                 }
                 .tag(2)
             CartView()
