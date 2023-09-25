@@ -175,3 +175,39 @@ struct WhiteFullWithButton : ButtonStyle {
         
     }
 }
+
+struct HelpStepsVerticalButton: View {
+    
+    var buttonText: String
+    var buttonImage: String?
+    var systemButtonName: String?
+    
+    var body: some View{
+        Button {
+            
+        } label: {
+            VStack{
+                if buttonImage != nil {
+                    Text(buttonImage ?? "")
+                        .font(.system(size: 85))
+                        .padding(.bottom,8)
+                }
+                else if systemButtonName != nil {
+                    Image(systemName: systemButtonName ?? "")
+                        .font(.system(size: 85))
+                        .foregroundColor(.white)
+                        .padding(.bottom,8)
+                }
+                
+                
+                Text(buttonText)
+                    .foregroundColor(.white)
+                    .bold()
+                    .font(.system(size: 20))
+            }
+            .frame(width: 150, height: 200)
+            .background(.green)
+            .cornerRadius(20)
+        }
+    }
+}
