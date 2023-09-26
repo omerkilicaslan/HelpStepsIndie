@@ -22,3 +22,8 @@ struct Constants {
     static let transfer = "Transfer"
 
 }
+
+extension String {
+    static let emptyString = ""
+    static let blankSpace = " "
+}
