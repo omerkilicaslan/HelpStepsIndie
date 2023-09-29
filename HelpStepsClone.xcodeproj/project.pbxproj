@@ -11,6 +11,9 @@
 		6615E9DF2AC3096F005111E8 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615E9DE2AC3096F005111E8 /* WalletView.swift */; };
 		6615E9E12AC309DB005111E8 /* WalletViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615E9E02AC309DB005111E8 /* WalletViewRow.swift */; };
 		6615E9E32AC37494005111E8 /* CampaignQRCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615E9E22AC37494005111E8 /* CampaignQRCard.swift */; };
+		663B22872AC6BE7D006D7750 /* MarketCategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B22862AC6BE7D006D7750 /* MarketCategoryCard.swift */; };
+		663B22892AC6C050006D7750 /* HSAdsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B22882AC6C050006D7750 /* HSAdsCard.swift */; };
+		663B228B2AC6C730006D7750 /* NoInternetConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663B228A2AC6C730006D7750 /* NoInternetConnectionView.swift */; };
 		6666D2A02AB3792D004DB914 /* HelpStepsCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6666D29F2AB3792D004DB914 /* HelpStepsCloneApp.swift */; };
 		6666D2A42AB37932004DB914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6666D2A32AB37932004DB914 /* Assets.xcassets */; };
 		6666D2A72AB37932004DB914 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6666D2A62AB37932004DB914 /* Preview Assets.xcassets */; };
@@ -41,6 +44,9 @@
 		6615E9DE2AC3096F005111E8 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		6615E9E02AC309DB005111E8 /* WalletViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewRow.swift; sourceTree = "<group>"; };
 		6615E9E22AC37494005111E8 /* CampaignQRCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignQRCard.swift; sourceTree = "<group>"; };
+		663B22862AC6BE7D006D7750 /* MarketCategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCategoryCard.swift; sourceTree = "<group>"; };
+		663B22882AC6C050006D7750 /* HSAdsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSAdsCard.swift; sourceTree = "<group>"; };
+		663B228A2AC6C730006D7750 /* NoInternetConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetConnectionView.swift; sourceTree = "<group>"; };
 		6666D29C2AB3792D004DB914 /* HelpStepsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelpStepsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6666D29F2AB3792D004DB914 /* HelpStepsCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpStepsCloneApp.swift; sourceTree = "<group>"; };
 		6666D2A32AB37932004DB914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 				6679F8262AC185AB00C0F81E /* CartView.swift */,
 				6615E9DC2AC1A289005111E8 /* HView.swift */,
 				6615E9DE2AC3096F005111E8 /* WalletView.swift */,
+				663B228A2AC6C730006D7750 /* NoInternetConnectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +195,8 @@
 				66976AB02AC0994C000D00A1 /* CategoryCard.swift */,
 				6615E9E02AC309DB005111E8 /* WalletViewRow.swift */,
 				6615E9E22AC37494005111E8 /* CampaignQRCard.swift */,
+				663B22862AC6BE7D006D7750 /* MarketCategoryCard.swift */,
+				663B22882AC6C050006D7750 /* HSAdsCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -263,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6695834E2ABF0DC500A73209 /* CircularViewComp.swift in Sources */,
+				663B22872AC6BE7D006D7750 /* MarketCategoryCard.swift in Sources */,
+				663B228B2AC6C730006D7750 /* NoInternetConnectionView.swift in Sources */,
 				6695835B2AC04E4400A73209 /* ProfileMainViewVM.swift in Sources */,
 				6615E9E32AC37494005111E8 /* CampaignQRCard.swift in Sources */,
 				6615E9E12AC309DB005111E8 /* WalletViewRow.swift in Sources */,
@@ -284,6 +295,7 @@
 				6679F8272AC185AB00C0F81E /* CartView.swift in Sources */,
 				A871A78D2AB37EA300A16CF0 /* MainTabBarView.swift in Sources */,
 				6666D2A02AB3792D004DB914 /* HelpStepsCloneApp.swift in Sources */,
+				663B22892AC6C050006D7750 /* HSAdsCard.swift in Sources */,
 				6666D2B62AB4F437004DB914 /* WalletCardView.swift in Sources */,
 				669583522ABF0F7400A73209 /* CustomTextFieldComp.swift in Sources */,
 				669583572ABF105C00A73209 /* Constants.swift in Sources */,
